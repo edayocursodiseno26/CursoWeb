@@ -1,0 +1,465 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body
+{
+	font-family:"Comic Sans MS", cursive;
+	
+}
+
+.contport, .contsobrenosotros2, .contclientes, .contservicio
+{
+	padding:60px 0;	
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+.titulo
+{
+	color:#603;
+	font-size:30px;
+	text-align:center;
+	margin-bottom:60px;
+}
+
+/* header o encabezado*/
+header
+{
+	width:100%;
+	height:600px;
+	background: #FBD3E9;  
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right,hsla(300,95%,50%,.2), hsla(240,100%,70%,.6)), url(../img/portada.jpg);
+/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right,hsla(300,95%,50%,.2), hsla(240,100%,70%,.6)), url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size:cover;/*la imagen tome el tamaño del contenedor*/
+	background-attachment:fixed;/*imagen de fondo se mueva con respectro al contenido*/
+	position:relative;
+	
+}
+
+nav
+{
+	text-align:right;
+	padding:30px 50px 0 0;
+
+}
+nav > a
+{
+	color:#FFF;
+	font-weight:300;
+	text-decoration:none;
+	margin-right:10px;
+	font-size:22px;
+}
+nav > a:hover
+{
+	text-decoration:underline;
+}
+.hola1
+{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+header .textoencab
+{
+	display:flex;
+	height:430px;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	text-align:center;
+}
+.textoencab h1
+{
+	font-size:50px;
+	color:#FFF;
+}
+.textoencab h2
+{
+	font-size:30px;
+	font-weight:200;
+	color:#FFF;
+}
+
+/* codigo de la seccion nuestro producto*/
+main .contsobrenosotros
+{
+	padding:30px 0 60px 0;	
+}
+
+.contsobrenosotros2
+{
+	display:flex;
+	justify-content:space-evenly;
+	
+}
+.imgarriba
+{
+	width:48%;
+}
+.contsobrenosotros2 .conttextos
+{
+	width:48%;
+}
+.conttextos h3
+{
+	margin-bottom:15px;
+}
+
+.conttextos h3 span
+{
+	background:#4d0686;
+	color:#FFF;
+	border-radius:50%;
+	display:inline-block;
+	text-align:center;
+	width:30px;
+	height:30px;
+	padding:2px;
+	box-shadow:0 0 6px 0 rgba(0,0,0,.5);/*comando para sombra*/
+	margin:5px;
+}
+
+.conttextos p
+{
+	padding:0px 0px 30px 15px;
+	font-weight:300;
+	text-align:justify;
+}
+
+/* código de galeria*/
+
+.portafolio
+{
+	background:#CCC;
+}
+
+.galeriaport
+{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap:wrap;
+}
+
+.imagenport
+{
+	width:24%;
+	margin-bottom:10px;
+	overflow:hidden;
+	position:relative;
+	cursor:pointer;
+	box-shadow:0 0 6px 0 rgba(0,0,0,.5);
+}
+.imagenport > img
+{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+}
+.iconoencima
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	
+	background:hsla(270,100%,40%,0.7);
+	transition:transform .5s;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.iconoencima img
+{
+	width:50px;
+}
+.iconoencima p
+{
+	color:#FFF;
+}
+
+.imagenport:hover .iconoencima
+{
+	transform:scale(0);
+}
+/*código sección clientes*/
+
+.tarjetas
+{
+	display:flex;
+	justify-content:space-evenly;
+	
+}
+.tarjetas .tarjeta
+{
+	background:#4d0686;
+	display:flex;
+	width:46%;
+	height:200px;
+	align-items:center;
+	justify-content:space-evenly;
+	border-radius:5px;
+	box-shadow:0 0 6px 0 rgba(0,0,0,.6);
+}
+.tarjetas .tarjeta img
+{
+	width:100px;
+	height:100px;
+	object-fit:cover;
+	border:3px solid #FFF;
+	border-radius:50%;
+	display:block;
+}
+
+.tarjetas .tarjeta > .conttextotarjeta
+{
+	width:60%;
+	color:#FFF;	
+}
+
+.tarjetas .tarjeta > .conttextotarjeta p
+{
+	font-weight:300;
+	padding-top:5px;
+	text-align:justify;
+}
+/*  código de servicios*/
+
+.opservicio
+{
+	background:#CCC;
+	padding-bottom:30px;
+}
+
+.seviciocont
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.servicioind
+{
+	width:28%;
+	text-align:center;
+}
+.servicioind img
+{
+	width:90%;
+	
+}
+
+.servicioind h3
+{
+	margin:10px 0;
+}
+
+.servicioind h3
+{
+	font-weight:300;
+	text-align:justify;
+}
+
+
+/*código de pie*/
+
+footer
+{
+	background:#666;
+	padding:60px 0 30px 0;
+	margin:auto;
+	overflow:hidden;
+	
+}
+.footercont
+{
+	display:flex;
+	width:90%;
+	justify-content:space-evenly;
+	margin:auto;
+	padding-bottom:50px;
+	border-bottom:1px solid #CCC;
+
+}
+.contfoo
+{
+	text-align:center;
+}
+.contfoo h4
+{
+	color:#FFF;
+	border-bottom:3px solid #609;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+.contfoo p
+{
+	color:#CCC;
+}
+.titulofinal
+{
+	text-align:center;
+	font-size:16px;
+	margin:20px 0 0 0;
+	color:#999;
+}
+@media screen and (max-width:900px)
+{
+	header
+	{
+		background-position:center;
+	}
+	/*sobre nosotros*/
+	.contsobrenosotros2
+	{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	.contsobrenosotros2 .conttextos
+	{
+		width:90%;
+	}
+	.imgarriba
+	{
+		width:90%;
+	}
+	/*galeria*/
+	.imagenport
+	{
+		width:40%;
+		
+	}
+	/*clientes*/
+	.tarjetas
+	{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	.tarjetas .tarjeta
+	{
+		width:90%;
+	}
+	.tarjetas .tarjeta:first-child
+	{
+		margin-bottom:30px;
+	}
+	/*servicios*-*/
+	
+	.seviciocont
+	{
+		justify-content:center;
+		flex-direction:column;
+	}
+	.servicioind
+	{
+		width:100%;
+		text-align:center;
+	}
+	.servicioind:nth-child(1), .servicioind:nth-child(2)
+	{
+		margin-bottom:60px;
+	}
+	
+	.servicioind img
+	{
+		width:90%;
+	}
+	
+	
+}
+@media screen and (max-width:700px)
+{
+	nav
+	{
+		text-align:center;
+		padding:30px 0 0 0;
+	}
+	nav > a
+	{
+		margin-right:5px;
+	}
+	.textoencab h1
+	{
+		font-size:30px;
+	}
+	.textoencab h2
+	{
+		font-size:20px;
+	}
+	.imgarriba
+	{
+		margin-bottom:60px;
+		width:99%;
+	}
+	.contsobrenosotros2 .conttextos
+	{
+		width:95%;
+	}
+	/* galerias*/
+	.imagenport
+	{
+		width:95%;
+	}
+	/*clientes*/
+	.tarjetas
+	{
+		justify-content:center;
+		flex-direction:column;
+	}
+	.tarjetas .tarjeta
+	{
+		height:450px;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		
+	}
+	.tarjetas .tarjeta img
+	{
+		width:90px;
+		height:90px;
+	}
+	/*pie de pagina o footer*/
+	
+	.footercont
+	{
+		flex-direction:column;
+		border:none;
+	}
+	.footercont
+	{
+		margin:20px;
+		text-align:center;
+	}
+	.footercont h4
+	{
+		border-bottom:0px none;
+	}
+	.footercont p
+	{
+		color:#FFF;
+		border-bottom:1px solid #FFF;
+		padding-bottom:20px;
+
+	}
+	.titulofinal
+	{
+		font-size:20px;
+		color:#FFF;
+	}
+}
